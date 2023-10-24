@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Graph</class>
+ <widget class="QWidget" name="Graph">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>480</width>
+    <height>428</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QCustomPlot" name="widget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>9</x>
+     <y>39</y>
+     <width>461</width>
+     <height>311</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QCustomPlot {
+  border-radius: 20px;
+}
+
+background-color : white;</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>365</y>
+     <width>21</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>SB Sans Text</family>
+     <pointsize>16</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>X</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>395</y>
+     <width>21</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>SB Sans Text</family>
+     <pointsize>16</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Y</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_xmin">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>365</y>
+     <width>70</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>SB Sans Text</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit {
+  qproperty-alignment: 'AlignVCenter | AlignHCenter';  border-radius: 10px;
+}
+
+background-color : white;</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_ymin">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>395</y>
+     <width>70</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>SB Sans Text</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit {
+  qproperty-alignment: 'AlignVCenter | AlignHCenter';
+  border-radius: 10px;
+}
+
+background-color : white;</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_xmax">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>365</y>
+     <width>70</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>SB Sans Text</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit {
+  qproperty-alignment: 'AlignVCenter | AlignHCenter';
+  border-radius: 10px;
+}
+
+background-color : white;</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_ymax">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>395</y>
+     <width>70</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>SB Sans Text</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit {
+  qproperty-alignment: 'AlignVCenter | AlignHCenter';
+  border-radius: 10px;
+}
+
+background-color : white;</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="Input_line">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>1</y>
+     <width>461</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>SB Sans Text</family>
+     <pointsize>14</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit {
+  qproperty-alignment: 'AlignVCenter | AlignHCenter';
+  border-radius: 10px;
+}
+
+background-color : white;</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_change_scale">
+   <property name="geometry">
+    <rect>
+     <x>265</x>
+     <y>365</y>
+     <width>140</width>
+     <height>52</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>SB Sans Text</family>
+     <pointsize>14</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+  background-color: #acd4b4;
+  color: white; 
+  border-radius: 20px;
+}
+
+QPushButton:pressed {
+    background-color: #8fba8f;
+}</string>
+   </property>
+   <property name="text">
+    <string>Change scale</string>
+   </property>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QCustomPlot</class>
+   <extends>QWidget</extends>
+   <!-- <header>../../../frontend/qcustomplot.h</header> -->
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
